@@ -105,8 +105,8 @@ class DashboardActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     /*
-    Display the result from the get request,
-    Parsing the data with the HATParseManager
+        Display the result from the get request,
+        Parsing the data with the HATParseManager
      */
     private fun displayValues(json: Json) {
         val names = HATParserManager().jsonToObjectList(json.content, HATBundleObject::class.java)
@@ -118,10 +118,19 @@ class DashboardActivity : AppCompatActivity(), View.OnClickListener {
         jsonResultTxt.text = displayText
     }
 
+    /*
+        Display a toast message
+     */
     private fun displayToast(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 
+
+    /*
+        This function logs out the user.
+        Removes the master key and deletes all the preferences.
+        Navigates the user back to the main activity
+     */
     private fun logout() {
         mEncryptionServices.removeMasterKey()
         mPreference.deletePreference()

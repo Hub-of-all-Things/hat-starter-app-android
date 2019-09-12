@@ -54,6 +54,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
+    /*
+        When the result is Activity.RESULT_OK, both Login and Signup modules return a token and a userDomain.
+
+     */
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         when (requestCode) {
@@ -77,6 +81,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
+    /*
+        Open the login module. In order to make it work we have to specify the configuration with our
+        applicationId and the baseUrl to make a look up for the hat name or the email.
+     */
     private fun openLogin() {
         val auth = AuthenticationModel(
             applicationId = AppConfig.applicationId,
@@ -87,6 +95,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val intent = Intent(this, LoginActivity::class.java)
         startActivityForResult(intent, LOGIN)
     }
+
+    /*
+        Open the Signup module. In order to make it work we have to specify the configuration with our
+        applicationId and the baseUrl to make the validation for the hat name and the email.
+     */
     private fun openSignup() {
         val signup = SignupConfiguration(
             applicationId = AppConfig.applicationId,
@@ -98,7 +111,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         startActivityForResult(intent, SIGNUP)
     }
 
-    // Success result from login to HAT , go to DashboardActivity
+    /*
+        Success result from the activity result. For both login and signup we have store
+        the user domain and the token, and navigate the user to the main dashboard.
+    */
     private fun success(userDomain: String?, newToken: String?) {
         encryptToken(newToken)
         val intent = Intent(this, DashboardActivity::class.java)
