@@ -1,0 +1,25 @@
+<resources>
+    <string name="log_in">LOG IN</string>
+    <string name="your_hat_name">yourhatname</string>
+    <string name="your_hat_domain">.yourhatdomain</string>
+    <string name="enter_hat_name">
+        </string>
+    <string name="select_hat_domain">
+        </string>
+    <string name="select_hat_domain_toolbar">SELECT HAT DOMAIN</string>
+    <string name="tapping_next">After tapping "next" you will be re-directed to your HAT to enter your password</string>
+
+    <string name="hubofallthings">.hubofallthings.net</string>
+    <string name="hubat">.hubat.net</string>
+    <string name="hatdirect">.hat.direct</string>
+    <string name="next">NEXT</string>
+    <string name="your_domain_will_appear_after_you_enter_your_name">Your domain will appear after you enter your name.</string>
+    <string name="log_in_with_hat_url">Log in with HAT URL</string>
+    <string name="yourname">yourname</string>
+    <string name="yourhatdomain">.yourhatdomain</string>
+    <string name="processing">Processing…</string>
+    <string name="log_in_with_email">LOG IN WITH EMAIL</string>
+    <string name="login_in_with_your_email">Log in with your Email</string>
+    <string name="logging_in">LOGGING IN</string>
+</resources>
+

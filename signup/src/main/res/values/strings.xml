@@ -1,0 +1,31 @@
+<resources>
+
+    <string name="your_hat_name">yourhatname</string>
+    <string name="your_hat_domain">.yourhatdomain</string>
+
+    <string name="create_account_toolbar">CREATE ACCOUNT</string>
+    <string name="first_name_create"><font size="14">First Name</font></string>
+    <string name="last_name_create"><font size="14">Last Name</font></string>
+    <string name="email_address_create"><font size="14">Email address</font></string>
+
+
+
+    <string name="your_name">yourname</string>
+
+    <string name="next">NEXT</string>
+
+    <string name="hubofallthings">.hubofallthings.net</string>
+    <string name="hubat">.hubat.net</string>
+    <string name="hatdirect">.hat.direct</string>
+
+    <string name="create_hat_username_description">Your name must: \n\u2022 start with a letter \n\u2022 contain alphanumeric characters only \n\u2022 contain lowercase letters only \n\u2022 be between 4 to 21 characters</string>
+    <string name="this_information_is_only_used_to_create_your_hat_microserver_your_personal_information_will_never_be_shared_with_anyone_unless_you_authorise_it">
+        This information is only used to create your HAT Microserver. Your personal information will never be shared
+        with anyone unless you authorise it.
+    </string>
+    <string name="enter_a_name">Enter a name</string>
+    <string name="please_wait_your_hat_is_being_created">Please wait, your HAT is being created…</string>
+    <string name="choose_a_name_for_your_hat_pda_s_unique_url">Choose a name for your HAT PDA\'s unique URL.</string>
+    <string name="create_your_url">Create your URL</string>
+</resources>
+

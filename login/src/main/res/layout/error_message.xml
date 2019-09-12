@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Copyright (C) 2018-2019 DataSwift Ltd
+  ~  *
+  ~  * SPDX-License-Identifier: MPL2
+  ~  *
+  ~  * This file is part of the Hub of All Things project (HAT).
+  ~  *
+  ~  * This Source Code Form is subject to the terms of the Mozilla Public
+  ~  * License, v. 2.0. If a copy of the MPL was not distributed with this
+  ~  * file, You can obtain one at http://mozilla.org/MPL/2.0/
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/errorLayoutMsg"
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:layout_gravity="center_horizontal"
+              android:gravity="center"
+              android:paddingStart="5dp"
+              android:paddingEnd="5dp"
+              android:background="@drawable/error_msg_drawable"
+              android:visibility="gone">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/errorTxt"
+            android:layout_gravity="center_vertical"
+            android:drawableStart="@drawable/error_msg_icon"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:text="Sorry that HAT name doesn’t exist"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/error_border"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:textAlignment="center"/>
+
+</LinearLayout>

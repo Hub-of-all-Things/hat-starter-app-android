@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HAT Starter App</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create account</string>
+    <string name="save">Save</string>
+    <string name="save_something">Save something</string>
+</resources>

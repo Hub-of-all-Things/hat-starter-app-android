@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009688</color>
+    <color name="error_message">#40E45151</color>
+    <color name="error_border">#E45151</color>
+    <color name="colorButtonEnabled">@color/colorPrimary</color>
+    <color name="colorButtonDisabled">#e0e0e0</color>
+    <color name="toolbar_color">@color/colorPrimary</color>
+    <color name="white_color">#ffffff</color>
+
+    <color name="loginViewDarkBlue">#4A556B</color>
+    <color name="loginViewSubtitleLight">#9A9A9A</color>
+    <color name="loginGreyLight172">#ACACAC</color>
+</resources>

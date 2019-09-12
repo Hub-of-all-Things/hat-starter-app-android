@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Copyright (C) 2018-2019 DataSwift Ltd
+  ~  *
+  ~  * SPDX-License-Identifier: MPL2
+  ~  *
+  ~  * This file is part of the Hub of All Things project (HAT).
+  ~  *
+  ~  * This Source Code Form is subject to the terms of the Mozilla Public
+  ~  * License, v. 2.0. If a copy of the MPL was not distributed with this
+  ~  * file, You can obtain one at http://mozilla.org/MPL/2.0/
+  ~  */
+  -->
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:theme="@style/LoginTheme"
+        android:background="#f5f5f5"
+>
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bar_height"
+            android:paddingTop="@dimen/bar_padding"
+            android:background="@color/loginViewDarkBlue"
+            android:elevation="4dp"
+    >
+        <ImageView
+                android:id="@+id/back_button_hat_domain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:src="@drawable/back_arrow_toolbar"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_hat_domain_toolbar"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_medium"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+
+        <Button
+                android:id="@+id/domainOpt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_domain_bg"
+                android:fontFamily="@font/roboto"
+                android:paddingStart="20dp"
+                android:stateListAnimator="@null"
+                android:paddingEnd="20dp"
+                android:text="@string/hubofallthings"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false" android:textColor="#4a556b"/>
+
+        <Button
+                android:id="@+id/domainOpt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_domain_bg"
+                android:fontFamily="@font/roboto"
+                android:stateListAnimator="@null"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="@string/hubat"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false" android:textColor="#4a556b"/>
+
+        <Button
+                android:id="@+id/domainOpt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_domain_bg"
+                android:fontFamily="@font/roboto"
+                android:stateListAnimator="@null"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="@string/hatdirect"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false" android:textColor="#4a556b"/>
+
+    </LinearLayout>
+
+</LinearLayout>

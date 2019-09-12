@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Copyright (C) 2018-2019 DataSwift Ltd
+  ~  *
+  ~  * SPDX-License-Identifier: MPL2
+  ~  *
+  ~  * This file is part of the Hub of All Things project (HAT).
+  ~  *
+  ~  * This Source Code Form is subject to the terms of the Mozilla Public
+  ~  * License, v. 2.0. If a copy of the MPL was not distributed with this
+  ~  * file, You can obtain one at http://mozilla.org/MPL/2.0/
+  ~  */
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:orientation="vertical"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_signup_success_tick"
+            android:id="@+id/signupSuccessIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="42dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"/>
+
+    <TextView
+            android:text="Success!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signupSuccessTitle"
+            app:layout_constraintTop_toBottomOf="@+id/signupSuccessIcon"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="32dp"
+            android:textSize="22sp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/createViewDarkBlue"/>
+
+    <TextView
+            android:text="Your HAT PDA with the following URL has been created:  "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signupSuccessDescription"
+            app:layout_constraintTop_toBottomOf="@+id/signupSuccessTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/createViewSubtitleLight"
+            android:fontFamily="@font/roboto"
+            android:textAlignment="center"/>
+
+    <TextView
+            android:text="jonathanwilkinson.hat.direct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signupSuccessHatDomain"
+            app:layout_constraintTop_toBottomOf="@+id/signupSuccessDescription"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:textColor="@color/createViewDarkBlue"
+            android:fontFamily="@font/roboto_bold"/>
+
+    <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/signupSuccessLoginBtn"
+
+            android:enabled="true"
+            android:text="LOG ME IN"
+            android:stateListAnimator="@null"
+            app:layout_constraintWidth_max="400dp"
+
+            android:background="@drawable/button_enabled_rounded"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="15sp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/signupSuccessHatDomain"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="42dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

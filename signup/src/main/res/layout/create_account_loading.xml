@@ -1,0 +1,66 @@
+<!--
+  ~ /**
+  ~  * Copyright (C) 2018-2019 DataSwift Ltd
+  ~  *
+  ~  * SPDX-License-Identifier: MPL2
+  ~  *
+  ~  * This file is part of the Hub of All Things project (HAT).
+  ~  *
+  ~  * This Source Code Form is subject to the terms of the Mozilla Public
+  ~  * License, v. 2.0. If a copy of the MPL was not distributed with this
+  ~  * file, You can obtain one at http://mozilla.org/MPL/2.0/
+  ~  */
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@color/createViewBackground">
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bar_height"
+            android:paddingTop="@dimen/bar_padding"
+            android:background="@color/toolbar_color"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/data_rights_icon"
+            android:id="@+id/loadingImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.35000002"/>
+
+    <TextView
+            android:text="@string/please_wait_your_hat_is_being_created"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:layout_marginTop="48dp"
+            app:layout_constraintTop_toBottomOf="@+id/loadingImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/createViewDarkBlue"
+            android:textAlignment="center"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
